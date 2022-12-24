@@ -37,6 +37,7 @@
 
 .header__right .menu {
     font-family: 'Bebas Neue', cursive;
+    align-items: center;
     font-weight: 300;
     list-style: none;
     display: flex;
@@ -95,6 +96,19 @@
 .hero__img img {
     max-width: 400px;
 }
+
+.hero__img {
+transition: transform 1s;
+}
+
+.hero__img:hover {
+    transform: rotate(140deg) scale(2) skew(30deg);
+}
+
+.hero__img:hover {
+    transform: scale(1.1) translateY(-10px)
+}
+
 
 .sale {
     position: absolute;
@@ -233,6 +247,18 @@
     align-items: center;
     gap: 1rem;
 }
+
+.card {
+    transition: transform 1s;
+    }
+    
+    .card:hover {
+        transform: rotate(140deg) scale(2) skew(30deg);
+    }
+    
+    .card:hover {
+        transform: scale(1.1) translateY(-10px)
+    }
 
 .card img {
     max-width: 100%;
@@ -500,7 +526,7 @@ footer i {
     gap: .5rem;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:1100) {
 
     .hero__header {
         align-items: center;
@@ -515,13 +541,11 @@ footer i {
 
     .header__right {
         align-items: center;
-
     }
 
     .hero__img {
         justify-content: center;
         padding-top: 0;
-
     }
 
     .hero__img img {
@@ -618,5 +642,15 @@ footer i {
     .hero__main {
         flex-direction: column;
         justify-content: center;
+    }
+
+    .sale {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .header__right {
+        flex-direction: row;
+        justify-content: justify;
     }
 }
