@@ -416,8 +416,8 @@
 /**** FOOTER ****/
 
 footer {
-    padding: 6rem;
-    padding-top: 0;
+    padding: 0rem;
+    padding-bottom: 0;
 }
 
 .footer {
