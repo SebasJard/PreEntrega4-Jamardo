@@ -1,0 +1,121 @@
+/*** GRID ****/
+
+.grid {
+    padding: 6rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "item1 item2" "item1 item3";
+    gap: 2rem;
+}
+
+.grid__item {
+    border-radius: 1rem;
+    background-size: cover;
+    background-position: center center;
+    padding: 2rem;
+
+    h5 {
+        color: $color_2;
+        font-family: $font-family_1;
+        font-weight: 300;
+        font-size: 1.2rem;
+    }
+
+    h4 {
+        color: $color_2;
+        font-family: $font-family_1;
+        font-weight: 300;
+        font-size: 1.6rem;
+    }
+}
+
+.grid__item1 {
+    grid-area: item1;
+    background-image: url("../img/grid-big.webp");
+    height: 400px;
+}
+
+.grid__item2 {
+    grid-area: item2;
+    background-image: url("../img/grid-small1.webp");
+}
+
+.grid__item3 {
+    grid-area: item3;
+    background-image: url("../img/grid-small2.jpg");
+}
+
+.enjoy {
+    padding: 6rem;
+    padding-top: 0;
+}
+
+.titles {
+    text-align: center;
+    padding-inline: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    h4 {
+        font-family: $font-family_1;
+        font-weight: 300;
+        font-size: 1.2rem;
+        background-color: $background-color_2;
+        padding: .5rem 1rem .25rem 1rem;
+    }
+
+    h2 {
+        font-family: $font-family_3;
+        font-size: 3rem;
+    }
+
+    p {
+        font-family: $font-family_2;
+    }
+}
+
+.cards {
+    display: flex;
+}
+
+.card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    transition: transform 1s;
+
+    &:hover {
+        transform: rotate(140deg) scale(2) skew(30deg);
+        transform: scale(1.1) translateY(-10px);
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    h4 {
+        font-family: $font-family_1;
+        font-weight: 300;
+        font-size: 1.6rem;
+    }
+
+    p {
+        font-family: $font-family_2;
+        width: 75%;
+        text-align: center;
+    }
+
+    a {
+        font-family: $font-family_3;
+        font-size: 1rem;
+        background-color: $background-color_3;
+        padding: .75rem 1rem;
+        color: $color_2;
+        text-decoration: none;
+    }
+}

@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BURGER HOUSE</title>
-    <link rel="stylesheet" href="./styles/style.css">
+    <title>BURGER HOUSE - Argentina</title>
+    <meta name="description" content="Las mejores hamburguesas del Norte Argentino.">
+    <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 </head>
+
 <body>
-    
+
     <section class="hero">
         <header class="hero__header">
             <h4 class="logo"><i class="bi bi-emoji-kiss"></i> BURGER HOUSE</h4>
             <div class="header__right">
                 <p>Express Delivery +1 2345 6789</p>
+                <button class="cerrar-menu"><i class="bi bi-x"></i></button>
+                <button class="abrir-menu"><i class="bi bi-list"></i></i></button>
                 <nav>
                     <ul class="menu">
                         <li><a href="index.html" class="menu__item">Home</a></li>
@@ -43,15 +48,15 @@
     </section>
 
     <section class="grid">
-        <div class="grid__item grid__item1">
+        <div class="grid__item grid__item1 bounce-in-fwd">
             <h5>TRY IT TODAY</h5>
             <h4>MOST POPULAR BURGER</h4>
         </div>
-        <div class="grid__item grid__item2">
+        <div class="grid__item grid__item2 bounce-in-fwd">
             <h5>TRY IT TODAY</h5>
             <h4>MORE FUN<br>MORE TASTE</h4>
         </div>
-        <div class="grid__item grid__item3">
+        <div class="grid__item grid__item3 bounce-in-fwd">
             <h5>TRY IT TODAY</h5>
             <h4>FRESH & CHILI</h4>
         </div>
@@ -61,25 +66,27 @@
         <div class="titles">
             <h4>ALWAYS TASTY BURGER</h4>
             <h2>CHOOSE & ENJOY</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus dicta minus possimus eligendi, quaerat nobis quas? Accusantium, quo itaque, ullam vitae omnis sint laboriosam numquam facilis cupiditate ex laudantium nam!</p>
+            <p>Disfruta de algunas de nuestras tantas opciones y variedades de hamburguesas diferentes!</p>
         </div>
         <div class="cards">
             <div class="card">
                 <img src="./img/enjoy1.png" alt="Burger">
-                <h4>LOREM IPSUM DOLOR</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <h4>Stacker Triple </h4>
+                <p>
+                    3 carnes a la parrilla, salsa stacker, pan, queso cheddar, panceta. Muy potente.</p>
                 <a href="#">ORDER NOW</a>
             </div>
             <div class="card">
                 <img src="./img/enjoy2.png" alt="Burger">
-                <h4>LOREM IPSUM DOLOR</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <h4>Bondiolita King Pickle Pepino </h4>
+                <p>
+                    Una creación digna de un REY. Pan de germen de trigo, barbacoa y mostaza, pickle pepino, cebolla y LA DELICIOSA BONDIOLITA DESMECHADA.</p>
                 <a href="#">ORDER NOW</a>
             </div>
             <div class="card">
                 <img src="./img/enjoy3.png" alt="Burger">
-                <h4>LOREM IPSUM DOLOR</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <h4>Extra Burger XL  </h4>
+                <p>Carne a la parrilla, pan, cebolla, mostaza, queso cheddar y ketchup. Extra riki riki.</p>
                 <a href="#">ORDER NOW</a>
             </div>
         </div>
@@ -88,9 +95,9 @@
     <section class="events">
         <div class="inner">
             <div class="inner__left">
-                <h5>DISCOVER</h5>
-                <h3>UPCOMING EVENTS</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam eaque sequi unde eveniet ad ut, aliquid tenetur quo nulla nostrum debitis dolorum ex repudiandae id deserunt nemo perspiciatis, doloribus recusandae.</p>
+                <h5>UPCOMING EVENTS</h5>
+                <h3>BURGER FEST</h3>
+                <p>Este año el evento se llevará acabo desde el próximo 27 de octubre hasta el 6 de noviembre. Llega un nuevo festival de hamburguesas que tendrá lugar durante nueve días. Se trata del Burguer Fest 2023 que se realizará desde el 27 de octubre hasta el 6 de noviembre de 2023.</p>
                 <div class="dots">
                     <div class="dot dot-y"></div>
                     <div class="dot"></div>
@@ -111,8 +118,10 @@
         <form class="reservation__form">
             <input class="name" type="text" placeholder="Name" name="name">
             <input class="email" type="email" placeholder="Email" name="email">
-            <input class="date" type="text" placeholder="Date" name="date" onfocus="(this.type='date')" onblur="(this.type='text')">
-            <input class="time" type="text" placeholder="Time" name="time" onfocus="(this.type='time')" onblur="(this.type='text')">
+            <input class="date" type="text" placeholder="Date" name="date" onfocus="(this.type='date')"
+                onblur="(this.type='text')">
+            <input class="time" type="text" placeholder="Time" name="time" onfocus="(this.type='time')"
+                onblur="(this.type='text')">
             <input class="people" type="text" placeholder="People" name="people">
             <input class="button" type="button" value="Find a Table">
         </form>
@@ -123,17 +132,17 @@
             <div class="footer__top">
                 <div>
                     <h2><i class="bi bi-emoji-kiss"></i> BURGER HOUSE</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quam natus doloremque cum nobis! Omnis ex repudiandae excepturi debitis? Doloremque omnis dolores doloribus. Quas, possimus aspernatur.</p>
+                    <p>¿Estás viendo doble? No. Estas bien, es nuestra hamburguesa doble carne, doble queso, doble todo, porque te duplicamos el sabor.</p>
                 </div>
                 <div class="address">
                     <p>
-                        <i class="bi bi-geo-alt-fill"></i> MAIN ROAD, BUILDING NAME, COUNTRY<br>
-                        <i class="bi bi-envelope-fill"></i> INFO@COMPANYNAME.COM
+                        <i class="bi bi-geo-alt-fill"></i> Lavalle 498, T4000 San Miguel de Tucumán, Tucumán<br>
+                        <i class="bi bi-envelope-fill"></i> INFO@BURGERHOUSE.COM
                     </p>
                 </div>
             </div>
             <div class="footer__bottom">
-                <p>© COMPANY NAME 2022. ALL RIGHTS RESERVED.</p>
+                <p>© BURGER HOUSE 2022. ALL RIGHTS RESERVED.</p>
                 <div class="icons">
                     <i class="bi bi-instagram"></i>
                     <i class="bi bi-facebook"></i>
@@ -145,4 +154,5 @@
     </footer>
 
 </body>
-</html> 
+
+</html>

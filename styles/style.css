@@ -37,7 +37,6 @@
 
 .header__right .menu {
     font-family: 'Bebas Neue', cursive;
-    align-items: center;
     font-weight: 300;
     list-style: none;
     display: flex;
@@ -51,7 +50,7 @@
     padding-inline: 6rem;
 }
 
-.hero__main > div {
+.hero__main>div {
     flex: 1;
 }
 
@@ -96,19 +95,6 @@
 .hero__img img {
     max-width: 400px;
 }
-
-.hero__img {
-transition: transform 1s;
-}
-
-.hero__img:hover {
-    transform: rotate(140deg) scale(2) skew(30deg);
-}
-
-.hero__img:hover {
-    transform: scale(1.1) translateY(-10px)
-}
-
 
 .sale {
     position: absolute;
@@ -158,7 +144,7 @@ transition: transform 1s;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
+    grid-template-areas:
         "item1 item2"
         "item1 item3";
     gap: 2rem;
@@ -227,6 +213,11 @@ transition: transform 1s;
     padding: .5rem 1rem .25rem 1rem;
 }
 
+.titles h3 {
+    font-family: 'alfa Slab one', cursive;
+    font-size: 3rem;
+}
+
 .titles h2 {
     font-family: 'Alfa Slab One', cursive;
     font-size: 3rem;
@@ -247,18 +238,6 @@ transition: transform 1s;
     align-items: center;
     gap: 1rem;
 }
-
-.card {
-    transition: transform 1s;
-    }
-    
-    .card:hover {
-        transform: rotate(140deg) scale(2) skew(30deg);
-    }
-    
-    .card:hover {
-        transform: scale(1.1) translateY(-10px)
-    }
 
 .card img {
     max-width: 100%;
@@ -392,7 +371,7 @@ transition: transform 1s;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: 
+    grid-template-areas:
         "name   email"
         "date   time"
         "people button";
@@ -442,8 +421,8 @@ transition: transform 1s;
 /**** FOOTER ****/
 
 footer {
-    padding: 0rem;
-    padding-bottom: 0;
+    padding: 6rem;
+    padding-top: 0;
 }
 
 .footer {
@@ -482,7 +461,7 @@ footer i {
     padding-block: 3rem;
 }
 
-.footer__top > div {
+.footer__top>div {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -526,35 +505,26 @@ footer i {
     gap: .5rem;
 }
 
-@media screen and (max-width:1100) {
+@media screen and (max-width: 768px) {
 
     .hero__header {
-        align-items: center;
         flex-direction: column;
         gap: 2rem;
     }
 
-    .hero__text {
-        align-items: center;
-        flex-direction: column;
-    }
-
     .header__right {
-        align-items: center;
+        align-items: flex-start;
     }
 
     .hero__img {
-        justify-content: center;
         padding-top: 0;
     }
 
     .hero__img img {
-        justify-content: center;
         max-width: 100%;
     }
 
     .hero__main {
-        justify-content: center;
         padding-inline: 2rem;
         padding-top: 3rem;
     }
@@ -634,23 +604,12 @@ footer i {
     .footer__bottom .icons {
         order: -1;
     }
-    
+
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 480px) {
 
     .hero__main {
         flex-direction: column;
-        justify-content: center;
-    }
-
-    .sale {
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .header__right {
-        flex-direction: row;
-        justify-content: justify;
     }
 }

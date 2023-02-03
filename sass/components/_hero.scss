@@ -1,0 +1,141 @@
+/**** HERO ****/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: $color_1;
+}
+
+.hero {
+    background-image: url("../img/hero-pattern.jpg");
+}
+
+.hero__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    padding-bottom: 0;
+
+    .logo {
+        font-family: $font-family_1;
+        font-weight: 300;
+        font-size: 2rem;
+    }
+}
+
+.header__right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1rem;
+
+    p {
+        font-family: $font-family_2;
+    }
+
+    .menu {
+        font-family: $font-family_1;
+        align-items: center;
+        font-weight: 300;
+        list-style: none;
+        display: flex;
+        font-size: 1.4rem;
+        gap: 2rem;
+        letter-spacing: 2px;
+    }
+}
+
+.hero__main {
+    display: flex;
+    padding-inline: 6rem;
+
+    >div {
+        flex: 1;
+    }
+}
+
+.hero__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h4 {
+        font-family: $font-family_1;
+        font-weight: 300;
+        font-size: 1.2rem;
+        border: 2px dashed #44270f;
+        width: max-content;
+        padding: .6rem;
+        padding-bottom: .4rem;
+        margin-bottom: 1rem;
+    }
+
+    h2 {
+        font-family: $font-family_3;
+        font-size: 5rem;
+        line-height: 1;
+        text-shadow: 4px 4px 0 white;
+    }
+
+    h3 {
+        font-family: $font-family_3;
+        font-size: 3rem;
+        text-shadow: 4px 4px 0 white;
+    }
+}
+
+.hero__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 3rem;
+    position: relative;
+    transition: transform 1s;
+
+    img {
+        max-width: 400px;
+    }
+
+    &:hover {
+        transform: rotate(140deg) scale(2) skew(30deg);
+        transform: scale(1.1) translateY(-10px);
+    }
+}
+
+.sale {
+    position: absolute;
+    bottom: 4rem;
+    left: 4rem;
+    background-color: $background-color_1;
+    width: 100px;
+    height: 100px;
+    padding: 3.6rem;
+    border-radius: 50%;
+    border: 2px dashed white;
+    outline: 5px solid #b91818;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: $font-family_1;
+    text-align: center;
+}
+
+.price {
+    color: $color_2;
+    font-size: 3rem;
+    line-height: 1;
+
+    small {
+        color: $color_2;
+        font-size: 1.4rem;
+    }
+}
+
+.only {
+    color: $color_2;
+    font-size: 1.8rem;
+    line-height: 1;
+    letter-spacing: 4px;
+}

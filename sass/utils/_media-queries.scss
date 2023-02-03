@@ -1,0 +1,85 @@
+/**** MEDIA-QUERIES ****/
+
+@media screen and (max-width: 768px) {
+	.hero__header {
+		flex-direction: column;
+		gap: 2rem;
+	}
+	.header__right {
+		align-items: flex-start;
+	}
+	.hero__img {
+		padding-top: 0;
+		img {
+			max-width: 100%;
+		}
+	}
+	.hero__main {
+		padding-inline: 2rem;
+		padding-top: 3rem;
+	}
+	.grid {
+		display: flex;
+		flex-direction: column;
+		padding: 2rem;
+	}
+	.grid__item {
+		flex: 1;
+	}
+	.grid__item1 {
+		padding-bottom: 7rem;
+	}
+	.enjoy {
+		padding: 2rem;
+	}
+	.titles {
+		padding-inline: 0;
+	}
+	.cards {
+		flex-direction: column;
+	}
+	.events {
+		padding: 2rem;
+		.inner {
+			flex-direction: column;
+		}
+		.inner__right {
+			order: -1;
+		}
+	}
+	.dots {
+		bottom: 0;
+	}
+	.reservation {
+		padding: 2rem;
+		background-image: none;
+	}
+	.reservation__form {
+		width: 70%;
+		display: flex;
+		flex-direction: column;
+	}
+	footer {
+		padding: 2rem;
+	}
+	.footer__top {
+		flex-direction: column;
+		padding: 0;
+		gap: 2rem;
+	}
+	.address {
+		align-items: flex-start;
+	}
+	.footer__bottom {
+		flex-direction: column;
+		gap: 1rem;
+		.icons {
+			order: -1;
+		}
+	}
+}
+@media screen and (max-width: 480px) {
+	.hero__main {
+		flex-direction: column;
+	}
+}

@@ -1,0 +1,76 @@
+/**** RESERVATION ****/
+
+.reservation {
+    padding: 6rem;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-image: url("../img/bg1.png"), url("../img/bg2.png");
+    background-size: 200px, 400px;
+    background-position: 100px center, 1150px 100px;
+}
+
+.reservation__heading {
+    text-align: center;
+
+    h5 {
+        font-family: $font-family_1;
+        font-weight: 300;
+        font-size: 1.6rem;
+    }
+
+    h4 {
+        font-family: $font-family_3;
+        font-size: 2rem;
+    }
+}
+
+.reservation__form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "name   email" "date   time" "people button";
+    width: 36rem;
+    gap: 1rem;
+
+    input {
+        padding: .75rem 1rem;
+        font-family: $font-family_1;
+        font-weight: 300;
+        color: $color_4;
+    }
+
+    .name {
+        grid-area: name;
+    }
+
+    .email {
+        grid-area: email;
+    }
+
+    .date {
+        grid-area: date;
+    }
+
+    .time {
+        grid-area: time;
+    }
+
+    .people {
+        grid-area: people;
+    }
+
+    .button {
+        grid-area: button;
+        border: 0;
+        background-color: $background-color_3;
+        font-family: $font-family_3;
+        text-transform: uppercase;
+        color: $color_2;
+        border-radius: 2px;
+        cursor: pointer;
+    }
+}

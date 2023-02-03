@@ -1,0 +1,66 @@
+/**** EVENTS ****/
+
+.events {
+    padding: 6rem;
+    padding-top: 0;
+}
+
+.inner {
+    display: flex;
+    padding: 2rem;
+    box-shadow: 15px 15px 30px #cccccc;
+}
+
+.inner__left {
+    padding-block: 2rem;
+    padding-right: 2rem;
+    flex: 1;
+    position: relative;
+
+    h5 {
+        font-family: $font-family_1;
+        font-weight: 300;
+        font-size: 1.6rem;
+        color: $color_3;
+        letter-spacing: 1px;
+    }
+
+    h3 {
+        font-family: $font-family_3;
+        font-size: 2rem;
+    }
+
+    p {
+        font-family: $font-family_2;
+        color: $color_3;
+        font-size: 1.1rem;
+    }
+}
+
+.inner__right {
+    flex: 1.25;
+    min-width: 0;
+
+    img {
+        max-width: 100%;
+    }
+}
+
+.dots {
+    display: flex;
+    gap: 5px;
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+}
+
+.dot {
+    width: 15px;
+    height: 15px;
+    background-color: $background-color_4;
+    border-radius: 50%;
+}
+
+.dot-y {
+    background-color: $background-color_2;
+}
