@@ -140,14 +140,6 @@
   font-family: "Lato", sans-serif;
 }
 
-.abrir-menu {
-  display: none;
-}
-
-.cerrar-menu {
-  display: none;
-}
-
 .header__right .menu {
   font-family: "Bebas Neue", cursive;
   align-items: center;
@@ -157,6 +149,10 @@
   font-size: 1.4rem;
   gap: 2rem;
   letter-spacing: 2px;
+}
+
+.hero__header .nav__label {
+  display: none;
 }
 
 .hero__main {
@@ -324,15 +320,15 @@
   padding: 0.5rem 1rem 0.25rem 1rem;
 }
 
-.titles h3 {
-  font-family: "Alfa Slab One", cursive; 
-  font-size: 2rem;
-}
-
 .titles h2 {
   font-family: "Alfa Slab One", cursive;
   text-align: center;
   font-size: 3rem;
+}
+
+.titles h3 {
+  font-family: "Alfa Slab One", cursive; 
+  font-size: 1.5rem;
 }
 
 .titles p {
@@ -615,7 +611,7 @@ footer i {
 }
 
 /**** MEDIA-QUERIES ****/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 885px) {
   .hero__header {
     flex-direction: column;
     gap: 2rem;
@@ -718,19 +714,6 @@ footer i {
 @media screen and (max-width: 480px) {
   .hero__main {
     flex-direction: column;
-  }
-
-  .abrir-menu {
-    display: block;
-    
-  }
-  
-  .cerrar-menu {
-    display: block;
-  }
-
-  .header__right .menu {
-    display: none;
   }
 }
 
