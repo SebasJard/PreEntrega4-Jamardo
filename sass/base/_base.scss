@@ -1,5 +1,10 @@
 @import "https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Lato&display=swap";
 
+.bounce-in-fwd {
+    -webkit-animation: bounce-in-fwd 1.1s both;
+    animation: bounce-in-fwd 1.1s both;
+}
+
 @-webkit-keyframes bounce-in-fwd {
     0% {
         -webkit-transform: scale(0);
@@ -18,8 +23,8 @@
     }
 
     55% {
-        -webkit-transform: scale(0.7);
-        transform: scale(0.7);
+        -webkit-transform: scale(.7);
+        transform: scale(.7);
         -webkit-animation-timing-function: ease-in;
         animation-timing-function: ease-in;
     }
@@ -32,8 +37,8 @@
     }
 
     81% {
-        -webkit-transform: scale(0.84);
-        transform: scale(0.84);
+        -webkit-transform: scale(.84);
+        transform: scale(.84);
         -webkit-animation-timing-function: ease-in;
         animation-timing-function: ease-in;
     }
@@ -46,8 +51,8 @@
     }
 
     95% {
-        -webkit-transform: scale(0.95);
-        transform: scale(0.95);
+        -webkit-transform: scale(.95);
+        transform: scale(.95);
         -webkit-animation-timing-function: ease-in;
         animation-timing-function: ease-in;
     }
@@ -78,8 +83,8 @@
     }
 
     55% {
-        -webkit-transform: scale(0.7);
-        transform: scale(0.7);
+        -webkit-transform: scale(.7);
+        transform: scale(.7);
         -webkit-animation-timing-function: ease-in;
         animation-timing-function: ease-in;
     }
@@ -92,8 +97,8 @@
     }
 
     81% {
-        -webkit-transform: scale(0.84);
-        transform: scale(0.84);
+        -webkit-transform: scale(.84);
+        transform: scale(.84);
         -webkit-animation-timing-function: ease-in;
         animation-timing-function: ease-in;
     }
@@ -106,8 +111,8 @@
     }
 
     95% {
-        -webkit-transform: scale(0.95);
-        transform: scale(0.95);
+        -webkit-transform: scale(.95);
+        transform: scale(.95);
         -webkit-animation-timing-function: ease-in;
         animation-timing-function: ease-in;
     }
@@ -120,12 +125,15 @@
     }
 }
 
-/**** HERO ****/
+/**** HERO  ****/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     color: $color_1;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 .hero {
@@ -142,6 +150,10 @@
         font-family: $font-family_1;
         font-weight: 300;
         font-size: 2rem;
+    }
+
+    .nav__label {
+        display: none;
     }
 }
 
@@ -194,16 +206,16 @@
         margin-bottom: 1rem;
     }
 
-    h3 {
-        font-family: $font-family_3;
-        font-size: 3rem;
-        text-shadow: 4px 4px 0 white;
-    }
-
     h2 {
         font-family: $font-family_3;
         font-size: 5rem;
         line-height: 1;
+        text-shadow: 4px 4px 0 white;
+    }
+
+    h3 {
+        font-family: $font-family_3;
+        font-size: 2rem;
         text-shadow: 4px 4px 0 white;
     }
 }
@@ -264,7 +276,6 @@
 }
 
 /*** GRID ****/
-
 .grid {
     padding: 6rem;
     display: grid;
@@ -311,28 +322,21 @@
     background-image: url("../img/grid-small2.jpg");
 }
 
-.bounce-in-fwd {
-    -webkit-animation: bounce-in-fwd 1.1s both;
-    animation: bounce-in-fwd 1.1s both;
-}
-
 /**** ENJOY ****/
-
 .enjoy {
     padding: 6rem;
     padding-top: 0;
 }
 
 .titles {
-    text-align: center;
     padding-inline: 8rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 1rem;
 
     h4 {
         font-family: $font-family_1;
+        text-align: center;
         font-weight: 300;
         font-size: 1.2rem;
         background-color: $background-color_2;
@@ -341,11 +345,19 @@
 
     h2 {
         font-family: $font-family_3;
+        text-align: center;
         font-size: 3rem;
+    }
+
+    h3 {
+        font-family: $font-family_3;
+        text-align: center;
+        font-size: 1.7rem;
     }
 
     p {
         font-family: $font-family_2;
+        text-align: center;
     }
 }
 
@@ -360,10 +372,9 @@
     align-items: center;
     gap: 1rem;
     transition: transform 1s;
-    transition: transform 1s;
 
     &:hover {
-        transform: rotate(140deg) scale(1) skew(30deg);
+        transform: rotate(140deg) scale(2) skew(30deg);
         transform: scale(1.1) translateY(-10px);
     }
 
@@ -394,7 +405,6 @@
 }
 
 /**** RESERVATION ****/
-
 .reservation {
     padding: 6rem;
     padding-top: 0;
@@ -471,7 +481,6 @@
 }
 
 /**** EVENTS ****/
-
 .events {
     padding: 6rem;
     padding-top: 0;
@@ -537,11 +546,114 @@
     background-color: $background-color_2;
 }
 
-/**** FOOTER ****/
+/**** CONTACT US ****/
+body {
+    height: 100vh;
+    width: 100%;
+}
 
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 100px;
+
+    &:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background: url("img/bg.jpg") no-repeat center;
+        background-size: cover;
+        filter: blur(50px);
+        z-index: -1;
+    }
+}
+
+.contact-box {
+    max-width: 850px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: $background-color_5;
+    box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
+}
+
+.left {
+    background: url("/img/bg2.png") no-repeat center;
+    background-size: cover;
+    height: 100%;
+}
+
+.right {
+    padding: 25px 40px;
+}
+
+h2 {
+    position: relative;
+    padding: 0 0 10px;
+    margin-bottom: 10px;
+
+    &:after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        height: 4px;
+        width: 50px;
+        border-radius: 2px;
+        background-color: $background-color_6;
+    }
+}
+
+.field {
+    width: 100%;
+    border: 2px solid rgba(0, 0, 0, 0);
+    outline: none;
+    background-color: $background-color_7;
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    margin-bottom: 22px;
+    transition: .3s;
+
+    &:hover {
+        background-color: $background-color_8;
+    }
+}
+
+textarea {
+    min-height: 150px;
+}
+
+.btn {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    background-color: $background-color_6;
+    color: $color_5;
+    font-size: 1.1rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: .3s;
+
+    &:hover {
+        background-color: $background-color_6;
+    }
+}
+
+/**** FOOTER ****/
 footer {
     padding: 0rem;
     padding-bottom: 0;
+    padding: 2rem;
 
     h2 {
         color: $color_2;
@@ -572,7 +684,7 @@ footer {
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: $background-color_5;
+        background-color: $background-color_9;
     }
 }
 
@@ -580,6 +692,9 @@ footer {
     z-index: 1;
     display: flex;
     padding-block: 3rem;
+    flex-direction: column;
+    padding: 0;
+    gap: 2rem;
 
     >div {
         flex: 1;
@@ -604,6 +719,8 @@ footer {
     display: flex;
     justify-content: space-between;
     padding-top: 3rem;
+    flex-direction: column;
+    gap: 1rem;
 
     p {
         font-family: $font-family_1;
@@ -614,11 +731,13 @@ footer {
     .icons {
         display: flex;
         gap: 0.5rem;
+        order: -1;
     }
 }
 
 .address {
     align-items: flex-end;
+    align-items: flex-start;
 
     p {
         font-family: $font-family_1;
@@ -627,16 +746,16 @@ footer {
     }
 }
 
-/**** MEDIA-QUERIES ****/
 
-@media screen and (max-width: 768px) {
+/**** MEDIA-QUERIES ****/
+@media screen and (max-width: 885px) {
     .hero__header {
         flex-direction: column;
         gap: 2rem;
     }
 
     .header__right {
-        align-items: flex-start;
+        align-items: center;
     }
 
     .hero__img {
@@ -705,32 +824,24 @@ footer {
         flex-direction: column;
     }
 
-    footer {
-        padding: 2rem;
+    .contact-box {
+        grid-template-columns: 1fr;
     }
 
-    .footer__top {
-        flex-direction: column;
-        padding: 0;
-        gap: 2rem;
-    }
-
-    .address {
-        align-items: flex-start;
-    }
-
-    .footer__bottom {
-        flex-direction: column;
-        gap: 1rem;
-
-        .icons {
-            order: -1;
-        }
+    .left {
+        height: 200px;
     }
 }
 
 @media screen and (max-width: 480px) {
     .hero__main {
         flex-direction: column;
+    }
+
+    .header__right {
+        .menu {
+            flex-direction: column;
+            align-items: center;
+        }
     }
 }
